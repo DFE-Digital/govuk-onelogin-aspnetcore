@@ -29,7 +29,7 @@ jobs:
           MINVERBUILDMETADATA: ${{ env.GITHUB_RUN_NUMBER }}
 
       - name: Publish package artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: GovUk.OneLogin.AspNetCore.nupkg
           path: src/GovUk.OneLogin.AspNetCore/bin/Release/*.nupkg
@@ -42,7 +42,7 @@ jobs:
 
     steps:
     - name: Download package artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: GovUk.OneLogin.AspNetCore.nupkg
 
