@@ -53,7 +53,7 @@ builder.Services.AddAuthentication(defaultScheme: OneLoginDefaults.Authenticatio
 
 ### JSON Web Key Set (JWKS)
 
-If you intend to use a JWKS endpoint to share your public key with Gov.UK OneLogin, make sure you specify the KeyId of your signing certificate when you set the `ClientAuthenticationCredentials`. The key used must be present on your JWKS endpoint.
+If you intend to use a JWKS endpoint to share your public key with GOV.UK One Login, make sure you specify the KeyId of your signing certificate when you set the `ClientAuthenticationCredentials`. The key used must be present on your JWKS endpoint.
 
 ```cs
 rsa.ImportFromPem(builder.Configuration["OneLogin:PrivateKeyPem"]);
