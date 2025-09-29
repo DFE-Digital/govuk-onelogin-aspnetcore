@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # required for minver to create the right version number
+          filter: tree:0
 
       - name: Restore
         run: dotnet restore
@@ -25,8 +28,6 @@ jobs:
 
       - name: Package
         run: dotnet pack src/GovUk.OneLogin.AspNetCore/ --configuration Release --no-build
-        env:
-          MINVERBUILDMETADATA: ${{ env.GITHUB_RUN_NUMBER }}
 
       - name: Publish package artifact
         uses: actions/upload-artifact@v4
