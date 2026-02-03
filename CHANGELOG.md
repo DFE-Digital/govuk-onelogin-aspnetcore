@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+Adds `UsePkce` option.
+
 ## 0.4.0
 
 Adds support for JWT-secured OAuth 2.0 authorisation request (JAR) and enables it by default.
