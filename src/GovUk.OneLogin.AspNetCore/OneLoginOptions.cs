@@ -151,6 +151,13 @@ public class OneLoginOptions
         set => OpenIdConnectOptions.CorrelationCookie = value;
     }
 
+    /// <inheritdoc cref="OpenIdConnectOptions.UsePkce"/>
+    public bool UsePkce
+    {
+        get => OpenIdConnectOptions.UsePkce;
+        set => OpenIdConnectOptions.UsePkce = value;
+    }
+
     /// <inheritdoc cref="OpenIdConnectOptions.Events"/>
     public OpenIdConnectEvents Events { get; }
 
