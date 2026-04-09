@@ -8,7 +8,7 @@ namespace GovUk.OneLogin.AspNetCore;
 /// </summary>
 public static class AuthenticationPropertiesExtensions
 {
-    private const string VectorsOfTrustKey = "GovUk.OneLogin.AspNetCore.VectorsOfTrust";
+    private const string VectorsOfTrustKey = ".ol.vtr";
 
     /// <summary>
     /// Gets the vectors of trust to use when authenticating using GOV.UK One Login.
