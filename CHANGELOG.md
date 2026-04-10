@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.2
+
+Increase `RemoteAuthenticationTimeout` to one hour (from 15 minutes) to align with One Login's IDV journey.
+
 ## 0.4.1
 
 Adds `UsePkce` option.

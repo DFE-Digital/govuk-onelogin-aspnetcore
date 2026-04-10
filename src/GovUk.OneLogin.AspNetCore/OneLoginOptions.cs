@@ -42,7 +42,10 @@ public class OneLoginOptions
             SaveTokens = false,
 
             MapInboundClaims = false,
-            DisableTelemetry = true
+            DisableTelemetry = true,
+
+            // One Login IDV journeys have a one hour timeout
+            RemoteAuthenticationTimeout = TimeSpan.FromHours(1)
         };
         OpenIdConnectOptions.ProtocolValidator.RequireNonce = true;
         OpenIdConnectOptions.TokenValidationParameters.NameClaimType = "sub";
