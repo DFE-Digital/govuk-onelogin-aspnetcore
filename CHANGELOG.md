@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3
+
+Increase `NonceLifetime` to one hour (from 15 minutes) to align with `RemoteAuthenticationTimeout`.
+
 ## 0.4.2
 
 Increase `RemoteAuthenticationTimeout` to one hour (from 15 minutes) to align with One Login's IDV journey.

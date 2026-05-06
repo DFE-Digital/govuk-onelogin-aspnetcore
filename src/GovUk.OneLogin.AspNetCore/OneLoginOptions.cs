@@ -48,6 +48,7 @@ public class OneLoginOptions
             RemoteAuthenticationTimeout = TimeSpan.FromHours(1)
         };
         OpenIdConnectOptions.ProtocolValidator.RequireNonce = true;
+        OpenIdConnectOptions.ProtocolValidator.NonceLifetime = TimeSpan.FromHours(1);
         OpenIdConnectOptions.TokenValidationParameters.NameClaimType = "sub";
         OpenIdConnectOptions.TokenValidationParameters.AuthenticationType = "GOV.UK One Login";
         OpenIdConnectOptions.Events = Events = new DelegateEventsWrapper(this);
